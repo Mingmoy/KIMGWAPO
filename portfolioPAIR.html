@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for proper text rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    
+    <!-- Link to external CSS file for styling -->
+    <link href="styles.css" rel="stylesheet">
+    
+    <!-- Google Fonts for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons for icon support -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <title>KIMOY Portfolio</title> <!-- Title of the webpage -->
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>KIMOY/RICKYBOY</h1> <!-- Main title of the portfolio -->
+            <a href="ricky.html" id="switch-icon" title="Switch to Another Index">
+                <i data-feather="arrow-right"></i> <!-- Switch icon -->
+            </a>
+            <nav id="navbar">
+                <ul>
+                    <!-- Navigation links to different sections of the portfolio -->
+                    <li><a href="#home"><i data-feather="home"></i> Home</a></li>
+                    <li><a href="#about"><i data-feather="user"></i> About</a></li>
+                    <li><a href="#projects"><i data-feather="folder"></i> Projects</a></li>
+                    <li><a href="#contact"><i data-feather="mail"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div id="welcome-container">
+            <div id="welcome-text">
+                <h1>HI</h1> <!-- Greeting -->
+                <h2 class="kimoy">I'M KIMOY</h2> <!-- Subtitle with name -->
+                <p>Studying Information Technology at BISU Balilihan</p> <!-- Brief introduction -->
+            </div>
+            <img id="welcome-photo" src="portfolio.jpg" alt="KIMOY's Photo"> <!-- Welcome photo -->
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2> <!-- Section title -->
+            <p>Hi, I'm Kim Angelo Balani, a BSIT student at BISU Ballilihan with a passion for classic Cafe Racer motorcycles and a deep love for cats. I enjoy singing and dancing, though I’m still honing my skills in programming. I consider myself to have a creative mind and a strategic approach to challenges. While my design skills are a work in progress, I’m always eager to learn and improve. Fun fact: I can move the muscles in my ears! Overall, I’m a laid-back student with big dreams and a lot of excitement for what the future holds.</p>
+            <div class="photo-album">
+                <img src="mingmoy.jpg" alt="Main Photo"> <!-- Main photo -->
+                <div class="hidden-photos">
+                    <!-- Additional hidden photos -->
+                    <img src="ako.jpg" alt="Photo 1">
+                    <img src="spiderkimoy.jpg" alt="Photo 2">
+                    <img src="caferacer.jpg" alt="Photo 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2> <!-- Section title -->
+        <div class="project-container">
+            <article>
+                <img src="application.jpg" alt="Project 1 Image"> <!-- Project 1 image -->
+                <h3>The Review Card App</h3> <!-- Project title -->
+                <p>A user-friendly application that allows you to create sets of cards, with the option to add individual cards within each set. These cards can be practiced interactively as flip cards, making it perfect for studying and reviewing.</p> <!-- Project description -->
+            </article>
+            <article>
+                <img src="Balani_activity gwapo.jpg" alt="Project 2 Image"> <!-- Project 2 image -->
+                <h3>SpiderCat in the Mist</h3> <!-- Project title -->
+                <p>A photo manipulation project created using Adobe Photoshop, showcasing a Photoshop composite technique.</p> <!-- Project description -->
+            </article>
+            <article>
+                <img src="project  nga logo.jpg" alt="Project 3 Image"> <!-- Project 3 image -->
+                <h3>CCIS Department Logo</h3> <!-- Project title -->
+                <p>This logo, created collaboratively by me, Steeve, and Shawn, won the design contest for the CCIS Department. It is now proudly used as the official logo of the CCIS Department at BISU Balilihan.</p> <!-- Project description -->
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2> <!-- Section title -->
+        <form id="contact-form"> <!-- Contact form -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> <!-- Name input -->
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <!-- Email input -->
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea> <!-- Message input -->
+            
+            <button type="submit">Send</button> <!-- Submit button -->
+        </form>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2> <!-- Section title -->
+                    <div class="contact-item">
+                        <strong>Email:</strong> balanikim84@gmail.com <!-- Email information -->
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> 09500216928 <!-- Phone information -->
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong> Purok 4, Cabawan District, Tagbilaran City, Bohol <!-- Address information -->
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kim Angelo Balani/Ricky Letegio. All Rights Reserved. | www.Portfolio.com</p> <!-- Footer content -->
+        <div class="social-media">
+            <a href="https://www.facebook.com/panoynoymanoy.noykolokoy/" target="_blank" title="Facebook"><i data-feather="facebook"></i></a>
+            <a href="https://www.instagram.com/kuyakim_balani/" target="_blank" title="Instagram"><i data-feather="instagram"></i></a>
+            <a href="https://github.com/Mingmoy" target="_blank" title="GitHub"><i data-feather="github"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace(); // Replace <i> elements with Feather icons
+    </script>
+</body>
+</html>
